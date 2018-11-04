@@ -12,7 +12,11 @@
 
 ActiveRecord::Schema.define(version: 3) do
 
+<<<<<<< HEAD
   create_table "costume_stores", force: :cascade do |t|
+=======
+  create_table "costume_store", force: :cascade do |t|
+>>>>>>> 41e1db80d100e527c032e28dedd7a87e731e89ee
     t.string "name"
     t.string "location"
     t.integer "costume_inventory"
@@ -27,8 +31,13 @@ ActiveRecord::Schema.define(version: 3) do
     t.string "price"
     t.string "image_url"
     t.string "size"
+<<<<<<< HEAD
     t.datetime "created_at"
     t.datetime "updated_at"
+=======
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+>>>>>>> 41e1db80d100e527c032e28dedd7a87e731e89ee
   end
 
   create_table "haunted_houses", force: :cascade do |t|
